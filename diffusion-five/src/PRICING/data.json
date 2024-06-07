@@ -1,0 +1,75 @@
+[
+
+
+    {
+     
+        "id" : 1,
+        "tag" : "./Images/price1.png",
+        "title" : "E-commerce Website",
+        "Product" : "5-10 products website",
+        "price" : "$42.62/5000৳",
+        "desc" : "This is for your small business with 5-10 products.",
+        "s1" : "✔️ Unlimited Revision",
+        "s2" : "✔️ Lifetime Support",
+        "s3" : "✔️ Mobile Responsive",
+        "s4" : "✔️ 5-10 products upload",
+        "s5" : "❌ Speed Optimisation",
+        "s6" : "❌ Premium Theme Plugin",
+        "s7" : "❌ 1 year Free Domain & Hosting"
+       
+    },
+
+    {
+     
+        "id" : 2,
+        "tag" : "./Images/price2.png",
+        "title" : "E-commerce Website",
+        "Product" : "20-40 products website",
+        "price" : "$85.25/10000৳",
+        "desc" : "This is for your small business with 20-40 products.",
+        "s1" : "✔️ Unlimited Revision",
+        "s2" : "✔️ Lifetime Support",
+        "s3" : "✔️ Mobile Responsive",
+        "s4" : "✔️ 5-10 products upload",
+        "s5" : "✔️ Speed Optimisation",
+        "s6" : "✔️ Premium Theme Plugin",
+        "s7" : "❌ 1 year Free Domain & Hosting"
+    },
+
+    {
+     
+        "id" : 3,
+        "tag" : "./Images/price2.png",
+        "title" : "E-commerce Website",
+        "Product" : "20-40 products website",
+        "price" : "$127.87/15000৳",
+        "desc" : "This is for your small business with 20-40 products.",
+        "s1" : "✔️ Unlimited Revision",
+        "s2" : "✔️ Lifetime Support",
+        "s3" : "✔️ Mobile Responsive",
+        "s4" : "✔️ 5-10 products upload",
+        "s5" : "✔️ Speed Optimisation",
+        "s6" : "✔️ Premium Theme Plugin",
+        "s7" : "✔️ 1 year Free Domain & Hosting"
+    },
+
+    {
+     
+        "id" : 4,
+        "tag" : "./Images/price3.png",
+        "title" : "E-commerce Website",
+        "Product" : "Unlimited products website",
+        "price" : "Let's Talk",
+        "desc" : "This is for your small business with 5-10 products.",
+        "s1" : "✔️ Unlimited Revision",
+        "s2" : "✔️ Lifetime Support",
+        "s3" : "✔️ Mobile Responsive",
+        "s4" : "✔️ 5-10 products upload",
+        "s5" : "✔️ Speed Optimisation",
+        "s6" : "✔️ Premium Theme Plugin",
+        "s7" : "✔️ 1 year Free Domain & Hosting"
+    }
+
+
+
+]

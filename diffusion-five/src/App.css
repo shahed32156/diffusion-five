@@ -1,0 +1,137 @@
+
+
+.services-container:hover .dropdown-links {
+            max-height: 200px;
+            opacity: 1;
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+        .dropdown-links {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+/* .background {
+
+    background: linear-gradient(to right, #000000, #36007A, #36007A);
+} */
+
+/* .bg {
+
+    background:url("./Images/cover.jpg");
+   
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+} */
+
+#holder{
+    overflow-x:hidden;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.title{
+    margin-top: 3rem;
+    text-align: center;
+}
+.scroll-item{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.75);
+}
+.scroll-item:nth-child(1){
+    /* background: url(./Images/p1.png); */
+    background-size: cover;
+    background-position: top;
+    transition: all 4s ease;
+}
+.scroll-item:nth-child(2){
+    /* background: url(./Images/p2.png); */
+    background-size: cover;
+    background-position: top;
+    transition: all 4s ease;
+}
+.scroll-item:nth-child(3){
+    /* background: url(./Images/p3.png); */
+    background-size: cover;
+    background-position: top;
+    transition: all 4s ease;
+}
+
+.scroll-item:nth-child(4){
+    /* background: url(./Images/p4.png); */
+    background-size: cover;
+    background-position: top;
+    transition: all 4s ease;
+}
+
+.scroll-item:nth-child(5){
+    /* background: url(./Images/p5.png); */
+    background-size: cover;
+    background-position: top;
+    transition: all 4s ease;
+}
+
+.scroll-item:nth-child(6){
+    /* background: url(./Images/p6.png); */
+    background-size: cover;
+    background-position: top;
+    transition: all 4s ease;
+}
+
+
+.scroll-item img{
+    width: 100%;
+    
+}
+
+.icons{
+    position: absolute;
+    bottom: -100%;
+    background-color: rgba(252, 66, 66, 0.85);
+    opacity:80px;
+    width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.5s ease;
+}
+.icons button{
+    margin: 0 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.scroll-item:hover .icons{
+    bottom: 0;
+}
+.scroll-item:hover{
+    background-position: bottom;
+}
+
+/* Reveal animate start */
+
+.reveal-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 0.6s ease-out;
+  }
+  
+  .reveal-element.is-visible {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  
+
+
+/* Reveal animate end */

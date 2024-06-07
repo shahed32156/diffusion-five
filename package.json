@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@sweetalert2/theme-dark": "^5.0.16",
+    "react-simple-chatbot": "^0.6.1",
+    "react-sweetalert2": "^0.6.0",
+    "styled-components": "^6.1.11"
+  }
+}

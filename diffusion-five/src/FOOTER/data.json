@@ -1,0 +1,30 @@
+[
+
+
+
+    {
+
+        "id": "1",
+        "title" : "Services",
+        "num1" : "Web Design & Development",
+        "num2": "Graphix Design",
+        "num3": "Artificial Inteligence",
+        "num4": "Digital Marketing"
+         
+       },
+
+       {
+
+        "id": "1",
+        "title" : "Section",
+        "num1" : "Services",
+        "num2": "Portfolio",
+        "num3": "Team",
+        "num4": "About",
+        "num5": "Contact"
+         
+       }
+
+  
+
+]
