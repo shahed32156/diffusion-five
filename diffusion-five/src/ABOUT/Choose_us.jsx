@@ -42,7 +42,7 @@ const Choose_us = () => {
 
                         <div className='flex gap-2 flex-col justify-center items-center'>
                             <ImHeadphones className='text-5xl text-purple-700' />
-                            <p className='text-[20px] text-center font-medium'>Lifetime Support</p>
+                            <p className='text-[20px] text-center font-medium'>03 month Support</p>
                         </div>
                     
                     </div> 
