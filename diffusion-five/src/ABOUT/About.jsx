@@ -83,7 +83,7 @@ const About = () => {
            <div className='flex flex-col gap-3 justify-center mx-3'>
 
                  <h1 className='w-full md:w-[600px] text-xl md:text-4xl font-bold'>We have been highly effective in website design, development, and digital marketing for the past 02 years.</h1> 
-                 <p className='w-full md:w-[550px] text-justify'>For the past five years, we have excelled in website design, development, and digital marketing. Our expertise and company culture have consistently resulted in satisfied customers. Our objective is to craft personalized customer experiences tailored to individual needs and ideas. We are dedicated to long-term partnerships, responsive feedback, and providing high-quality services.</p>
+                 <p className='w-full md:w-[550px] text-justify'>For the past two years, we have excelled in website design, development, and digital marketing. Our expertise and company culture have consistently resulted in satisfied customers. Our objective is to craft personalized customer experiences tailored to individual needs and ideas. We are dedicated to long-term partnerships, responsive feedback, and providing high-quality services.</p>
                  <div>
 
                     <div className='mt-4 grid gap-6 grid-cols-2 md:grid-cols-3'>
