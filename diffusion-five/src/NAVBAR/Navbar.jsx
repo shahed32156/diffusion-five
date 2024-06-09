@@ -88,7 +88,7 @@ const Navbar = () => {
           <a className='hover:text-purple-500 hover:transition hover:duration-[400ms]' href="#"><Link to="portfolio" smooth={true} duration={500}>Portfolio</Link></a>
           <a className='hover:text-purple-500 hover:transition hover:duration-[400ms]' href="#"><Link to="team" smooth={true} duration={500}>Team</Link></a>
          <a className='hover:text-purple-500 hover:transition hover:duration-[400ms]' href="#"><Link to="about" smooth={true} duration={500}>About</Link></a>
-         <a className='hover:text-purple-500 hover:transition hover:duration-[400ms]' href="#"><Link to="about" smooth={true} duration={500}>Contact</Link></a>
+         <a className='hover:text-purple-500 hover:transition hover:duration-[400ms]' href="#"><Link to="contact" smooth={true} duration={500}>Contact</Link></a>
 
 </div>
 
