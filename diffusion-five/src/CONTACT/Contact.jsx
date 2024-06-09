@@ -73,8 +73,8 @@ const Contact = () => {
 
                   <div className='flex gap-2 items-center'>
                     
-                    <a href="#" className='md:hover:text-purple-700'><FaLinkedin className='' /></a>
-                    <a className=' md:hover:text-purple-700 md:hover:scale-105 md:hover:transition-all md:hover:duration-300' href="#"><p>Linkedin</p></a>
+                    <a href="https://www.linkedin.com/company/diffusion-five/" target='_blank' className='md:hover:text-purple-700'><FaLinkedin className='' /></a>
+                    <a href="https://www.linkedin.com/company/diffusion-five/" target='_blank' className=' md:hover:text-purple-700 md:hover:scale-105 md:hover:transition-all md:hover:duration-300'><p>Linkedin</p></a>
 
                   </div>
 
