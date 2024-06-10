@@ -7,69 +7,78 @@ import Swal from'sweetalert2';
 
 const Query = () => {  
 
-    const form = useRef();
+  const form = useRef();
 
-     const [name, setName] = useState();
-     const [email, setEmail] = useState();
-     const [query, setQuery] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [query, setQuery] = useState("");
 
+  const handleName = (e) => {
 
-    const handleName = (e) => {
+        const value = e.target.value;
+        const regex = /^[a-zA-Z\s]*$/;
+    
+        if (regex.test(value)) {
+          setName(value);
+        } else {
+          Swal.fire({
+            title: "Error",
+            text: "Invalid name",
+            icon: "error"
+          });
+        }
+    
+        console.log(value);
+      
+  }
 
+  const handleEmail = (e) => {
+      setEmail(e.target.value);
+      console.log(e.target.value);
+  }
 
-        console.log(e.target.value);
+  const handleQuery = (e) => {
+      setQuery(e.target.value);
+      console.log(e.target.value);
+  }
 
-    }
+  const handleSubmit = (e) => {
+      e.preventDefault();
+      
+      if (name.length <= 3) {
+          Swal.fire({
+              title: "Error",
+              text: "Name must be more than 3 characters",
+              icon: "error"
+          });
+          return;
+      }
 
-    const handleEmail = (e) => {
-
-
-        console.log(e.target.value);
-
-    }
-
-    const handleQuery = (e) => {
-
-
-        console.log(e.target.value);
-
-    }
-
-    const handleSubmit = (e) => {
-
-        e.preventDefault();
-        setName(name);
-        setEmail(email);
-        setQuery(query);
-
-        Swal.fire({
+      Swal.fire({
           title: "Send Your Query",
           text: "Successfully sent your query",
           icon: "success"
-          });
-  
+      });
 
-        emailjs
-        .sendForm('service_rtixv6y', 'template_qa4ablj', form.current, {
+      emailjs.sendForm('service_rtixv6y', 'template_qa4ablj', form.current, {
           publicKey: 'wG2TB6JzfeU6u3ZPq',
-        })
-        .then(
+      })
+      .then(
           () => {
-            console.log('SUCCESS!');
+              console.log('SUCCESS!');
           },
           (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
-        
-    }
+              console.log('FAILED...', error.text);
+          }
+      );
+  }
 
-    const handleReset = () => {
+  const handleReset = () => {
+      setName("");
+      setEmail("");
+      setQuery(""); 
+  }
 
-     document.getElementById("input").value="";
-     document.getElementById("input2").value="";
-     document.getElementById("query").value="";   
-    }
     
   return (
 
@@ -91,8 +100,8 @@ const Query = () => {
             </div>
 
             <div>
-                <input className='w-[350px] h-[50px] input focus:outline-none border-2 border-purple-700 pl-2 rounded-lg md:w-[400px]' required type="email" 
-                name="email" id="input2" onChange={handleEmail}  value={email} placeholder='Enter your email' />
+                <input className='w-[350px] h-[50px] focus:outline-none border-2 border-purple-700 pl-2 rounded-lg md:w-[400px]' required type="email" 
+                name="email" id="input2" onChange={handleEmail} value={email} placeholder='Enter your email' />
             </div>
 
             <div>
