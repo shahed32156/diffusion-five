@@ -17,21 +17,33 @@ const Book = () => {
 
     const handleName = (e) => {
 
-
-        console.log(e.target.value);
+      const value = e.target.value;
+      const regex = /^[a-zA-Z\s]*$/;
+  
+      if (regex.test(value)) {
+        setName(value);
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: "Invalid name",
+          icon: "error"
+        });
+      }
+  
+      console.log(value);
 
     }
 
     const handleEmail = (e) => {
 
-
+        setEmail(email);
         console.log(e.target.value);
 
     }
 
     const handleProject = (e) => {
 
-
+            setProject(project);
             console.log(e.target.value);
         
 
@@ -39,16 +51,22 @@ const Book = () => {
 
     const handleSubmit = (e) => {
 
-        e.preventDefault();
-        setProject(project);
-        setName(name);
-        setEmail(email);
+      e.preventDefault();
+      
+      if (name.length <= 3) {
+          Swal.fire({
+              title: "Error",
+              text: "Name must be more than 3 characters",
+              icon: "error"
+          });
+          return;
+      }
 
-        Swal.fire({
-        title: "Book Now",
-        text: "Successfully booked",
-        icon: "success"
-        });
+      Swal.fire({
+          title: "Send Your Query",
+          text: "Successfully sent your query",
+          icon: "success"
+      });
 
         emailjs
         .sendForm('service_792fs4e', 'template_u6xr62t', form.current, {
@@ -68,9 +86,9 @@ const Book = () => {
 
     const handleReset = () => {
 
-
-     document.getElementById("input2").value="";
-     document.getElementById("input3").value="";   
+    setName("");
+    setEmail("");
+      
     }
     
   return (
