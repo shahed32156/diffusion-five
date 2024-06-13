@@ -25,6 +25,7 @@ const toggleMenu = () => {
   }
 };
 
+
 const Navbar = () => {
   return (
     <>
@@ -270,7 +271,7 @@ const Navbar = () => {
                 className="hover:text-purple-500 hover:transition hover:duration-[400ms]"
                 href="#"
               >
-                <Link to="about" smooth={true} duration={500}>
+                <Link to="contact" smooth={true} duration={500}>
                   Contact
                 </Link>
               </a>
@@ -282,7 +283,7 @@ const Navbar = () => {
 
         <div className="mx-3 md:mx-36 mt-2 md:mt-28 md:pb-28 md:absolute md:top-28 ">
           <div className="">
-            <h1 className="text-black text-2xl sm:text-3xl md:text-5xl md:w-[700px] md:leading-[60px] font-bold font-Oswald">
+            <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:w-[600px] lg:w-[700px] md:leading-[60px] font-bold font-Oswald">
               Welcome to our cutting-edge{" "}
               <span className="text-purple-700">web platform</span> to take your
               business into new heights{" "}
