@@ -71,7 +71,7 @@ const About = () => {
 
         </div>
 
-      <div className='flex flex-col gap-3 md:flex-row mx-3 md:mx-28 justify-between items-center mt-10'>
+      <div className='flex flex-col gap-3 md:flex-col lg:flex-row mx-3 md:mx-28 justify-between items-center mt-10'>
         
            <div>
 
