@@ -11,7 +11,7 @@ const Team_data= (props) => {
 
     <div>
       
-      <div className='pt-14 pb-10 w-full md:w-[400px] px-6 border-[1px] rounded-lg shadow-xl mx-auto'>
+      <div className='pt-14 pb-10 w-full h-full px-6 border-[1px] rounded-lg shadow-xl mx-auto'>
                     
           
                    <div className='pb-3'>
