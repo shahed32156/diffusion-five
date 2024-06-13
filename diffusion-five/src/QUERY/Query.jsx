@@ -92,21 +92,24 @@ const Query = () => {
     
     <div className='mt-6 px-3'>
 
-        <form ref={form} onSubmit={handleSubmit} className='flex flex-col items-center justify-center gap-4'>
+        <form ref={form} onSubmit={handleSubmit} className='flex flex-col items-center justify-center gap-5'>
         
-            <div>
-                <input className='w-[350px] h-[50px] focus:outline-none border-2 border-purple-700 pl-2 rounded-lg md:w-[400px]' required type="text" 
-                name="name" id="input" onChange={handleName} value={name} placeholder='Enter your name' />
+            <div className='relative'>
+                <input className='w-[350px] h-[50px] bg-transparent focus:outline-none border-2 border-purple-700 pl-4 rounded-lg md:w-[400px]' required type="text" 
+                name="name" id="input" onChange={handleName} value={name} />
+                <div className='label absolute bg-white text-[#999] top-3 pr-2 left-3 pointer-events-none z-10'>Enter your name</div>
             </div>
 
-            <div>
-                <input className='w-[350px] h-[50px] focus:outline-none border-2 border-purple-700 pl-2 rounded-lg md:w-[400px]' required type="email" 
-                name="email" id="input2" onChange={handleEmail} value={email} placeholder='Enter your email' />
+            <div className='relative'>
+                <input className='w-[350px] h-[50px] focus:outline-none border-2 border-purple-700 pl-4 rounded-lg md:w-[400px]' required type="email" 
+                name="email" id="input2" onChange={handleEmail} value={email} />
+                <div className='label absolute bg-white text-[#999] top-3 pr-2 left-3 pointer-events-none z-10'>Enter your email</div>
             </div>
 
-            <div>
-                <textarea  className='w-[350px] h-[100px] focus:outline-none border-2 border-purple-700 pl-2 rounded-lg md:w-[400px]' required 
-                name="message" id="query" onChange={handleQuery} value={query} placeholder='Enter your query'></textarea>
+            <div className='relative'>
+                <textarea  className='w-[350px] h-[100px] focus:outline-none border-2 border-purple-700 pl-4 rounded-lg md:w-[400px]' required 
+                name="message" id="query" onChange={handleQuery} value={query} ></textarea>
+                <div className='label absolute bg-white text-[#999] top-3 pr-2 left-3 pointer-events-none z-10'>Enter your query</div>
             </div>
 
             <div className='flex gap-4 justify-center items-center'>
