@@ -156,9 +156,8 @@ input:focus,
      transform:translate(-10px,-26px) scale(0.88);
      transition:0.5s ease;
      padding-left:8px;
-     color:black;
-     font-weight:600;
-  
+     font-weight:500px;
+     color:#5f249f; 
   }
 
   textarea:focus + .label,
@@ -167,9 +166,14 @@ input:focus,
      transform:translate(-10px,-26px) scale(0.88);
      transition:0.5s ease;
      padding-left:8px;
-     color:black;
-     font-weight:600;
+     font-weight:500px;
+     color:#5f249f; 
   
+  }
+
+  textarea:focus {
+
+    padding-top:6px;
   }
 
 
