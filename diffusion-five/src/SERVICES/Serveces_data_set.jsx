@@ -10,7 +10,7 @@ const {img, title, desc} = props;
 
     <a className='cursor-default'>
 
-            <div className='h-[475px] md:h-[470px] py-10 w-full md:w-[400px] px-6 border-[1px] rounded-lg shadow-xl md:hover:transition md:hover:duration-500 md:hover:scale-110 border-purple-700 mx-auto'>
+            <div className='h-full py-10 w-full px-4 border-[1px] rounded-lg shadow-xl md:hover:transition md:hover:duration-500 md:hover:scale-110 border-purple-700 mx-auto'>
                     
                     
 

@@ -12,7 +12,7 @@ items = Data.map((item,index) => <Serveces_data_set key={index} img={item.img} t
   return (
    <>
    
-   <div className='mt-20 mx-3 sm:mx-3 md:mx-32 lg:mx-32 xl:mx-32'>
+   <div className='mt-20 mx-3 sm:mx-3 md:mx-32'>
 
         <div className='text-center'>
 
@@ -21,7 +21,7 @@ items = Data.map((item,index) => <Serveces_data_set key={index} img={item.img} t
         </div>
 
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10'>
 
             
                 {items}
