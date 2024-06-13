@@ -135,3 +135,48 @@
 
 
 /* Reveal animate end */
+
+input {
+    background:transparent;
+    z-index:1111;
+}
+
+
+input:focus,
+  input:valid {
+
+     
+     
+  
+  }
+
+  input:focus + .label,
+  input:valid + .label {
+
+     transform:translate(-10px,-26px) scale(0.88);
+     transition:0.5s ease;
+     padding-left:8px;
+     color:black;
+     font-weight:600;
+  
+  }
+
+  textarea:focus + .label,
+  textarea:valid + .label {
+
+     transform:translate(-10px,-26px) scale(0.88);
+     transition:0.5s ease;
+     padding-left:8px;
+     color:black;
+     font-weight:600;
+  
+  }
+
+
+/* input styles start */
+
+
+
+
+
+/* input styles end */
