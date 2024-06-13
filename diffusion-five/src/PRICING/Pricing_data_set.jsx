@@ -10,7 +10,7 @@ const {tag, title, product, price, desc, s1, s2, s3, s4, s5, s6,s7 } = props
   return (
 
 
-            <div className='pb-10 w-full md:w-[320px] border-[1px] rounded-lg shadow-xl border-purple-700 mx-auto'>
+            <div className='pb-10 h-full w-full border-[1px] rounded-lg shadow-xl border-purple-700 mx-auto'>
                     
                     <div className='bg-purple-500 py-4 relative'>
                         
@@ -23,7 +23,7 @@ const {tag, title, product, price, desc, s1, s2, s3, s4, s5, s6,s7 } = props
                     </div>
 
                     <div className='mt-3'>
-                        <h1 className='text-center text-[30px] font-extrabold text-[tomato]'>{price}</h1>
+                        <h1 className='text-center text-[30px] md:text-[22px] lg:text-[30px] font-extrabold text-[tomato]'>{price}</h1>
                         <p className='text-center pb-3'>{desc}</p>
                         <p className='text-center font-medium border-b-[1px] pb-2 mx-14 border-b-[#bbbbbb]'>{s1}</p>
                         <p className='text-center font-medium border-b-[1px] pt-2 pb-2 mx-14 border-b-[#bbbbbb]'>{s2}</p>
@@ -31,7 +31,6 @@ const {tag, title, product, price, desc, s1, s2, s3, s4, s5, s6,s7 } = props
                         <p className='text-center font-medium border-b-[1px] pt-2 pb-2 mx-14 border-b-[#bbbbbb]'>{s4}</p>
                         <p className='text-center font-medium border-b-[1px] pt-2 pb-2 mx-14 border-b-[#bbbbbb]'>{s5}</p>
                         <p className='text-center font-medium border-b-[1px] pt-2 pb-2 mx-14 border-b-[#bbbbbb]'>{s6}</p>
-                        <p className='text-center font-medium border-b-[1px] pt-2 pb-2 mx-14 border-b-[#bbbbbb]'>{s7}</p>
                         <div className='mt-6 flex justify-center items-center'>
                         <a className='border-purple-500 border-2 py-2 px-8 rounded-md md:hover:border-purple-500 font-semibold hover:text-white hover:bg-purple-500 hover:transition hover:duration-[400ms] cursor-pointer'><Link to="book" smooth={true} duration={500}>Book for order</Link></a>
                         </div>
