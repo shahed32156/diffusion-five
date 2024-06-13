@@ -25,7 +25,7 @@ const Contact = () => {
     </div>
 
 
-   <div className='flex flex-col mx-3 md:flex-row gap-4 justify-between items-center mt-10'>
+   <div className='flex flex-col mx-3 md:flex-col lg:flex-row gap-4 justify-between items-center mt-10'>
 
 
         <div>
