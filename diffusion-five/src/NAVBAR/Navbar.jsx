@@ -4,6 +4,14 @@ import { Link } from "react-scroll";
 
 import { IoMdArrowDropdown } from "react-icons/io";
 
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+// import './custom.css'; // Add this line to import your custom CSS
+
 window.addEventListener("scroll", function() {
   const navbar = document.getElementById("navbar");
   if (window.scrollY > 0) {
@@ -27,6 +35,17 @@ const toggleMenu = () => {
 
 
 const Navbar = () => {
+
+  //   const sliderSettings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  // };
+
   return (
     <>
       <div className=" text-white relative">
@@ -134,11 +153,23 @@ const Navbar = () => {
               </a>
             </div>
 
-        <img
-          className="mt-20 sm:mt-3 md:mt-0 w-full md:h-[800px] opacity-100 md:opacity-35 lg:opacity-35 xl:opacity-35"
-          src="./Images/cover.jpg"
-          alt=""
-        />
+            <Carousel
+          showThumbs={false}
+          autoPlay
+          infiniteLoop
+          className="mt-20 sm:mt-3 md:mt-0 w-full opacity-100 md:opacity-35"
+          >
+
+          <div>
+            <img className="md:h-[800px]" src="./Images/cover1.png" alt="Cover 1" />
+          </div>
+          <div>
+            <img className="md:h-[800px]" src="./Images/cover.jpg" alt="Cover 2" />
+          </div>
+          <div>
+            <img className="md:h-[800px]" src="./Images/cover2.png" alt="Cover 3" />
+          </div>
+        </Carousel>
 
         <div className="relative">
           <nav
