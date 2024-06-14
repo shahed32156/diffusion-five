@@ -11,11 +11,11 @@ const Choose_us = () => {
     <>
     
 
-    <div className='mt-20 text-center md:text-start md:mx-32'>
+    <div className='mt-20 text-center md:text-center lg:text-start md:mx-32'>
 
              <h1 className='text-[20px] text-purple-700 font-mono font-extrabold pb-3'>Why you choose us?</h1>
 
-        </div>
+    </div>
 
       <div className='flex flex-col gap-3 md:flex-col lg:flex-row mx-3 md:mx-28 justify-between items-center mt-4'>
  
@@ -42,7 +42,7 @@ const Choose_us = () => {
 
                         <div className='flex gap-2 flex-col justify-center items-center'>
                             <ImHeadphones className='text-5xl text-purple-700' />
-                            <p className='text-[20px] text-center font-medium'>Lifetime Support</p>
+                            <p className='text-[20px] text-center font-medium'>03 Month Support</p>
                         </div>
                     
                     </div> 
