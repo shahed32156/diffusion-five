@@ -1,4 +1,33 @@
 
+/* Carousel start */
+
+/* custom.css */
+
+.carousel .control-dots .dot {
+    width: 13px;
+    height: 13px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: opacity 0.25s ease-in;
+  }
+  
+  .carousel .control-dots .dot.selected, 
+  .carousel .control-dots .dot:hover {
+    background: purple;
+  }
+  
+
+  
+  .carousel .control-arrow {
+    font-size:200px;
+    color:purple;
+  }
+  
+
+
+/* Carousel end */
+
 
 .services-container:hover .dropdown-links {
             max-height: 200px;
@@ -173,11 +202,12 @@ input:focus,
 
   textarea:focus {
 
-    padding-top:6px;
+    padding-top:8px;
   }
 
 
 /* input styles start */
+
 
 
 
