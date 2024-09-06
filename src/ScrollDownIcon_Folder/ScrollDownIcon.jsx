@@ -41,7 +41,7 @@ const ScrollDownIcon = () => {
   if (!showIcon) return null;
 
   return (
-    <div className="bg-black bg-opacity-40 rounded-lg py-6 px-3 fixed top-1/2 left-1/2 transform flex flex-col items-center justify-center animate-fade-in">
+    <div className="bg-black bg-opacity-40 rounded-lg py-6 px-3 fixed top-1/2 left-[38%] md:left-1/2 transform flex flex-col items-center justify-center animate-fade-in">
       <FaMouse className="text-3xl text-white animate-bounce" />
       <p className="text-white mt-2 text-[16px]">Scroll Now</p>
     </div>
