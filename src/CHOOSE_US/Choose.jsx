@@ -42,7 +42,7 @@ const Choose = () => {
       <section className='text-white mt-20'>
 
         <div className='bg-[#06062f] flex gap-6 flex-col xl:flex-row items-center justify-between xl:pl-10 2xl:pl-36'>
-                <div className='flex flex-col gap-4 px-3'>
+                <div className='flex flex-col gap-4 px-3 py-3'>
                 <h3 className='text-2xl font-bold'>
                     Why <span className='text-gradient'>Choose Us</span>
                 </h3>
