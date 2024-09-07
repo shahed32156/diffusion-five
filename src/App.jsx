@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PuffLoader from 'react-spinners/PuffLoader';
-import { FaArrowUp, FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope, FaTimes,FaUser } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope, FaTimes,FaUser } from 'react-icons/fa';
 import RevealOnScroll from './HOOK/RevealOnScroll';
 import Navbar from './NAVBAR/Navbar';
 import Carousel from './CAROUSEL/Carousel';
@@ -32,10 +32,10 @@ import Deals from './DEALS_WITH_CLIENT/Deals';
 import ScrollDownIcon from './ScrollDownIcon_Folder/ScrollDownIcon';
 import Pricing_part from './ALL_PART_OF_COMPONENTS/Pricing_part';
 import FAQ_part from './ALL_PART_OF_COMPONENTS/FAQ_part';
+import Chatbot from './ALL_PART_OF_COMPONENTS/Chatbot';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [showScrollTop, setShowScrollTop] = useState(false);
   const [showSocialIcons, setShowSocialIcons] = useState(false);
 
   useEffect(() => {
@@ -44,21 +44,7 @@ function App() {
       setIsLoading(false);
     }, 4000);
 
-    // Show or hide scroll-to-top button
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    
   }, []);
 
   const scrollToTop = () => {
@@ -337,6 +323,7 @@ function App() {
           
           
           <Footer />
+          <Chatbot />
           <ScrollDownIcon />
           </BrowserRouter>
 
@@ -355,14 +342,6 @@ function App() {
             )}
           </div>
 
-          {showScrollTop && (
-            <button
-              onClick={scrollToTop}
-              className='fixed bottom-5 right-5 bg-[black] text-white p-3 rounded-full shadow-lg transition-colors duration-300'
-            >
-              <FaArrowUp size={20} />
-            </button>
-          )}
         </div>
       )}
     </>
