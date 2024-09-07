@@ -6,7 +6,7 @@ const Carousel = () => {
     
     <>
     
-      <section style={{backgroundImage:'url("./Images/spider-net.jpg")', backgroundPosition:"center", backgroundRepeat:"no-repeat", backgroundSize:"cover"}} className=' pt-28 pb-10 lg:pt-24 xl:pt-36 xl:pb-16 bg-opacity-5 px-3 lg:px-10 xl:px-20 2xl:px-36'>
+      <section style={{backgroundImage:'url("./Images/spider-net.png")'}} className=' pt-28 pb-10 lg:pt-24 xl:pt-36 xl:pb-16 bg-opacity-5 px-3 lg:px-10 xl:px-20 2xl:px-36'>
 
 
             <div className='flex flex-col gap-8 lg:flex-row justify-between items-center'>
