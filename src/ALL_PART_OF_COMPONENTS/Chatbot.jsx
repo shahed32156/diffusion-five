@@ -48,9 +48,9 @@ const steps = [
         trigger: "Graphix Design",
       },
       {
-        value: "Artificial Intelligence",
-        label: "Artificial Intelligence",
-        trigger: "Artificial Intelligence",
+        value: "Software Quality Assurance",
+        label: "Software Quality Assurance",
+        trigger: "Software Quality Assurance",
       },
       {
         value: "Digital Marketing",
@@ -77,9 +77,9 @@ const steps = [
     end: true,
   },
   {
-    id: "Artificial Intelligence",
+    id: "Software Quality Assurance",
     message:
-      "Thanks for selecting your preferred Artificial Intelligence service. Our team will contact you very soon.",
+      "Thanks for selecting your preferred Software Quality Assurance service. Our team will contact you very soon.",
     end: true,
   },
   {
@@ -100,12 +100,13 @@ const steps = [
 const botAvatar = "./Images/chatbot.png"; // Replace this with your bot avatar image URL
 
 // Notification sound URL
-const notificationSound = "./Images/notify.wav";
+const notificationSound = "./Images/notify.mp3";
 
 // Chatbot component
 const Chatbot = () => {
   const [isOpened, setIsOpened] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
+  const [showWelcomeText, setShowWelcomeText] = useState(true); // New state for welcome text
 
   useEffect(() => {
     // Show notification after 2 seconds
@@ -116,9 +117,15 @@ const Chatbot = () => {
       audio.play();
     }, 2000);
 
-    return () => clearTimeout(timer); // Clean up timer on component unmount
+    // Add click event listener to document to hide welcome text only
+    const handleClick = () => setShowWelcomeText(false);
+    document.addEventListener("click", handleClick);
 
-    
+    // Cleanup
+    return () => {
+      clearTimeout(timer); // Clean up timer
+      document.removeEventListener("click", handleClick); // Remove event listener
+    };
   }, []);
 
   const handleChatbotOpen = () => {
@@ -138,8 +145,16 @@ const Chatbot = () => {
           floatingIcon={
             <div onClick={handleChatbotOpen} className="relative">
               <BsFillChatTextFill className="text-white text-2xl" />
-              {showNotification && <span className="notification-badge absolute -top-6 left-6 text-[red] text-2xl font-extrabold animate-bounce">1</span>}
-            {showNotification && <span className="notification-badge absolute -top-16 sm:-top-12 right-5 text-[white] text-[13px] w-[150px] sm:w-[200px] bg-black px-2 rounded-t-2xl rounded-n-none py-2 animate-fade-in">Hello, welcome to DiffusionFive. What is your name?</span>}
+              {showNotification && (
+                <span className="notification-badge absolute -top-6 left-6 text-[red] text-2xl font-extrabold font-mono animate-bounce">
+                  1
+                </span>
+              )}
+              {showNotification && showWelcomeText && (
+                <span className="notification-badge absolute -top-16 sm:-top-12 right-5 text-[white] text-[13px] w-[150px] sm:w-[200px] bg-black px-2 rounded-t-2xl rounded-n-none py-2 animate-fade-in">
+                  Hello, welcome to DiffusionFive. What is your name?
+                </span>
+              )}
             </div>
           }
           botAvatar={botAvatar}
