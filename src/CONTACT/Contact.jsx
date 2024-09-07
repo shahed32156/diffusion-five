@@ -156,7 +156,7 @@ const handleSubmit = (e) => {
 
           <div className="mt-8">
             <h3 className="text-white mb-4">Follow our social media</h3>
-            <ul className="flex items-center justify-center sm:justify-start gap-3 text-white text-2xl">
+            <ul className="flex items-center gap-3 text-white text-2xl">
             <a href="https://www.facebook.com/profile.php?id=61560502701437&mibextid=ZbWKwL" target='_blank'><FaFacebook className='text-white text-2xl cursor-pointer' /></a>
                 <a href="https://wa.me/8801741987566?text=Hello!" target="_blank" rel="noopener noreferrer"><FaWhatsapp className='text-white text-2xl cursor-pointer' /></a>
                 <a href="https://www.linkedin.com/company/diffusion-five/" target='_blank'><FaLinkedin className='text-white text-2xl cursor-pointer' /></a>
