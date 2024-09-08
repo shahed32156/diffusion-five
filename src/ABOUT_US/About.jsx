@@ -22,9 +22,9 @@ const About = () => {
                                 <h3 className='text-xl text-center lg:text-start font-bold'>About Our <span className='text-gradient'>Company</span></h3>
                                 <h1 className='text-3xl text-center lg:text-start md:text-4xl w-full lg:w-[500px] xl:w-[550px] font-semibold'>We have been highly effective in website design, development, and digital marketing as a startup company.</h1>
                                 <p className='lg:w-[400px] text-center lg:text-start xl:w-[450px]'>As a startup company, we have excelled in website design, development, and digital marketing. Our expertise and company culture have consistently resulted in satisfied customers. Our objective is to craft personalized customer experiences tailored to individual needs and ideas. We are dedicated to long-term partnerships, responsive feedback, and providing high-quality services.</p>
-                               <NavLink className="mx-auto lg:mx-0" to="/about_us"> <button className='mt-3 bg-gradient-to-r hover:bg-gradient-to-l duration-500 hover:scale-105 to-blue-500 from-pink-500 h-[45px] w-[150px] rounded-lg'>
+                               <NavLink to="/about_us" className='mt-3 mx-auto lg:mx-0 bg-gradient-to-r hover:bg-gradient-to-l duration-500 hover:scale-105 to-blue-500 from-pink-500 h-[45px] w-[150px] rounded-lg flex justify-center items-center'>
                                  Discover More
-                                </button></NavLink>
+                                </NavLink>
                         </div>
             </div>
 
