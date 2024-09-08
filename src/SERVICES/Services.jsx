@@ -62,9 +62,9 @@ const Services = () => {
                     {service.icon}
                     <h3 className='text-xl font-semibold'>{service.title}</h3>
                     <p>{service.description}</p>
-                  <NavLink to={service.route}>  <button className='mt-5 bg-gradient-to-r hover:bg-gradient-to-l duration-500 hover:scale-105 to-blue-500 from-pink-500 h-[40px] w-[120px] rounded-lg'>
+                  <NavLink to={service.route} className='mt-5 flex justify-center items-center bg-gradient-to-r hover:bg-gradient-to-l duration-500 hover:scale-105 to-blue-500 from-pink-500 h-[40px] w-[120px] rounded-lg'>
                       See Details
-                    </button></NavLink>
+                    </NavLink>
                   </div>
                 </div>
           </div>
